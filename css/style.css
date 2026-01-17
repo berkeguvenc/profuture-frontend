@@ -12471,4 +12471,109 @@ h6, .h6 {
   }
 }
 
+.header-wrapper {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  z-index: 1020;
+}
+.header-wrapper .top-bar {
+  display: none;
+  background-color: #081542;
+  height: 44px;
+  color: white;
+  font-size: 13px;
+  position: relative;
+  z-index: -1;
+}
+@media (min-width: 992px) {
+  .header-wrapper .top-bar {
+    display: flex;
+    padding-left: 380px;
+  }
+}
+.header-wrapper .top-bar .top-left .icon {
+  width: 22px;
+  height: 18px;
+}
+.header-wrapper .top-bar .top-right .info-item .value {
+  font-weight: 700;
+}
+.header-wrapper .main-header {
+  background-color: white;
+  height: 70px;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .header-wrapper .main-header {
+    height: 95px;
+  }
+}
+.header-wrapper .logo-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  background-color: #273D89;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 44px;
+}
+@media (min-width: 992px) {
+  .header-wrapper .logo-area {
+    top: -44px;
+    height: 139px;
+    padding: 0 66px 0 32px;
+    border-top-right-radius: 100px;
+  }
+  .header-wrapper .logo-area::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: -7px;
+    width: 154px;
+    height: 154px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+.header-wrapper .logo-area .logo-img {
+  max-height: 45px;
+}
+@media (min-width: 992px) {
+  .header-wrapper .logo-area .logo-img {
+    max-height: 91px;
+  }
+}
+.header-wrapper .logo-area .logo-img {
+  width: auto;
+}
+@media (min-width: 992px) {
+  .header-wrapper .main-nav {
+    padding-left: 260px;
+  }
+}
+.header-wrapper .main-nav .nav-list {
+  gap: 32px;
+}
+.header-wrapper .main-nav .nav-list .nav-link {
+  color: #2A2C31;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.header-wrapper .main-nav .nav-list .nav-link:hover {
+  color: #273D89;
+}
+.header-wrapper .btn-mobile-toggle {
+  border: none;
+  background: transparent;
+}
+.header-wrapper .btn-mobile-toggle .icon {
+  width: 32px;
+  height: 32px;
+  color: #273D89;
+}
+
 /*# sourceMappingURL=style.css.map */
