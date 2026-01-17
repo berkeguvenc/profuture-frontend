@@ -1,37 +1,40 @@
-
-
-// Tasarımdaki Spesifik Değerler
 h1 {
+  font-size: $h1-font-size;
   color: $h1-color;
   font-weight: $font-weight-bold;
   line-height: 38px;
 }
 
 h2 {
+  font-size: $h2-font-size;
   color: $h2-color;
   font-weight: $font-weight-bold;
   line-height: 36px;
 }
 
 h3 {
+  font-size: $h3-font-size;
   color: $h3-color;
   font-weight: $font-weight-semibold;
   line-height: 32px;
 }
 
 h4 {
+  font-size: $h4-font-size;
   color: $h4-color;
   font-weight: $font-weight-semibold;
   line-height: 30px;
 }
 
 h5 {
+  font-size: $h5-font-size;
   color: $h5-color;
   font-weight: $font-weight-regular;
   line-height: 28px;
 }
 
 h6 {
+  font-size: $h6-font-size;
   color: $h6-color;
   font-weight: $font-weight-regular;
   line-height: 26px;

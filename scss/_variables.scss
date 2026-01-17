@@ -1,0 +1,44 @@
+// --- Renk Paleti ---
+$primary:       #273D89;
+$success:       #A8B95E;
+$cream-bg:      #FBF6E3;
+$dark-blue:     #081542;
+$danger:        #DB0D15;
+$warning:       #DE8536;
+$info:          #00C3D0;
+$gray:          #676A73;
+$dark:          #2A2C31;
+$border-color:  #ACB1C6;
+$light-blue:    #C6ECFF;
+$dark-primary:  #174162;
+
+// Hover Renkleri
+$primary-hover:       #112053;
+$primary-dark-hover:  #0A1742;
+$primary-light-hover: #273D89;
+$success-hover:       #2B3016; 
+$danger-hover:        #9D0006;
+
+// --- Tipografi Ayarları ---
+$font-family-sans-serif: 'Inter', sans-serif;
+
+$font-weight-bold:     700;
+$font-weight-semibold: 600;
+$font-weight-regular:  400;
+$font-weight-light:    300;
+
+// Heading Renk Atamaları
+$h1-color: $dark-primary;
+$h2-color: $primary;
+$h3-color: $success;
+$h4-color: $dark;
+$h5-color: $gray;
+$h6-color: $dark;
+
+// Font Boyutları
+$h1-font-size: 32px;
+$h2-font-size: 28px;
+$h3-font-size: 26px;
+$h4-font-size: 24px;
+$h5-font-size: 22px;
+$h6-font-size: 20px;
