@@ -12389,11 +12389,13 @@ h6, .h6 {
   background-color: #00C3D0;
   color: white;
   border-radius: 50px;
+  text-transform: uppercase;
 }
 .badge-custom.badge-primary-pill {
   background-color: #112053;
   color: white;
   border-radius: 50px;
+  text-transform: uppercase;
 }
 .badge-custom.badge-primary {
   background-color: #273D89;

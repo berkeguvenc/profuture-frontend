@@ -12,11 +12,13 @@
     background-color: $info;
     color: white;
     border-radius: 50px;
+    text-transform: uppercase;
   }
   &.badge-primary-pill {
     background-color: $primary-hover;
     color: white;
     border-radius: 50px;
+    text-transform: uppercase;
   }
 
   &.badge-primary {

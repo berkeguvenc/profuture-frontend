@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Profuture - Style Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .guide-wrapper {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .guide-section {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .guide-section:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container guide-wrapper">
+        <h1 class="mb-5">Tasarım Standartları (Style Guide)</h1>
+
+        <section class="guide-section">
+            <h6>Tipografi</h6>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>H1 Başlık - 32px</h1>
+                    <h2>H2 Başlık - 28px</h2>
+                    <h3>H3 Başlık - 26px</h3>
+                    <h4>H4 Başlık - 24px</h4>
+                    <h5>H5 Başlık - 22px</h5>
+                    <h6>H6 Başlık - 20px</h6>
+                </div>
+                <div class="col-md-6">
+                    <p>Body Text: Inter - 16px. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p><strong>Strong Text: Inter Bold - 16px</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="guide-section">
+            <h6>Butonlar (Index.html Kullanımı)</h6>
+            <div class="d-flex flex-wrap gap-4 align-items-center">
+
+                <button class="btn btn-outline-custom">
+                    <span>Detay</span>
+                    <i class="icon icon-right"></i>
+                </button>
+
+                <button class="btn btn-primary btn-kurul">
+                    <i class="icon icon-kurul"></i>
+                    <span>Dergi Kurulu</span>
+                </button>
+
+                <button class="btn btn-primary btn-see">
+                    <i class="icon icon-eye"></i>
+                    <span>Görüntüle</span>
+                </button>
+
+                <button class="btn btn-primary btn-author">
+                    <i class="icon icon-author"></i>
+                    <span>Yazar Rehberi</span>
+                </button>
+
+                <button class="btn btn-primary btn-send">
+                    <span>Gönder</span>
+                    <i class="icon icon-right"></i>
+                </button>
+
+                <button class="btn btn-circle btn-search">
+                    <i class="icon icon-search"></i>
+                </button>
+
+                <button class="btn btn-circle btn-download">
+                    <i class="icon icon-download"></i>
+                </button>
+
+                <button class="btn btn-circle">
+                    <i class="icon icon-x"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="guide-section">
+            <h6>Rozetler (Badges)</h6>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge-custom badge-info-pill">Yeni</span>
+                <span class="badge-custom badge-primary-pill">Özel Sayı</span>
+                <span class="badge-custom badge-warning">Şehir</span>
+                <span class="badge-custom badge-success">Çevre</span>
+                <span class="badge-custom badge-primary">İklim</span>
+                <span class="badge-custom badge-light">Deneme</span>
+            </div>
+        </section>
+
+        <section class="guide-section">
+            <h6>Kart Yapıları</h6>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card-custom" style="max-width: 500px;">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-5">
+                                <img src="assets/images/cilt1.png" class="img-fluid rounded" alt="Dergi">
+                            </div>
+                            <div class="col-7 ps-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <i class="icon icon-pdf" style="width: 24px; height: 24px;"></i>
+                                    <span class="badge-custom badge-info">YENİ</span>
+                                </div>
+                                <span class="badge-custom badge-light mb-1">Dergi</span>
+                                <h4 class="card-title mb-2" style="font-size: 1.1rem;">Teknoloji ve Dijital Dergisi</h4>
+                                <div class="card-meta mb-1">
+                                    <span><i class="icon icon-cilt"></i> Cilt: 1</span>
+                                    <span class="ms-2"><i class="icon icon-number"></i> Sayı: 1</span>
+                                </div>
+                                <div class="card-meta mb-3">
+                                    <span><i class="icon icon-calendar"></i> Aralık 2022</span>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-circle"><i class="icon icon-eye"></i></button>
+                                    <button class="btn btn-circle"><i class="icon icon-download"></i></button>
+                                    <button class="btn btn-circle"><i class="icon icon-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <div class="card-custom card-article">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                            <div class="flex-grow-1">
+                                <div class="d-flex gap-2 mb-3">
+                                    <span class="badge-custom badge-primary">İklim</span>
+                                    <span class="badge-custom badge-light">Araştırma Makalesi</span>
+                                </div>
+                                <div class="d-flex align-items-start gap-2 mb-3">
+                                    <i class="icon icon-pdf" style="width: 28px; height: 28px;"></i>
+                                    <h3 class="card-title m-0">Türkiye’nin Teknoloji Politikaları ve Döngüsel Ekonomi
+                                    </h3>
+                                </div>
+                                <div class="card-meta flex-wrap">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="icon icon-sticky-notes"></i>
+                                        <span>Sayfa: <strong>12-28</strong></span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 ms-md-4">
+                                        <i class="icon icon-author"></i>
+                                        <span>Elif Başkaya Acar, Emre Taran, Halil Başar</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <button class="btn btn-circle"><i class="icon icon-email"></i></button>
+                                <button class="btn btn-circle"><i class="icon icon-download"></i></button>
+                                <button class="btn btn-primary px-4">
+                                    <i class="icon icon-eye"></i>
+                                    <span>Görüntüle</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
