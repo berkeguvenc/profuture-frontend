@@ -92,8 +92,9 @@
       gap: 32px;
 
       .nav-link {
+        font-size: 14px;
         color: $dark;
-        font-weight: $font-weight-semibold;
+        font-weight: $font-weight-medium;
         text-decoration: none;
         transition: color 0.3s;
 

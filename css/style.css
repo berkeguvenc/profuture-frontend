@@ -11922,13 +11922,14 @@ h6, .h6 {
   gap: 8px;
   padding-left: 15px;
   padding-right: 24px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
   max-height: 55px;
 }
-.btn i, .btn svg {
+.btn i,
+.btn svg {
   transition: transform 0.3s ease;
 }
 
@@ -11941,7 +11942,8 @@ h6, .h6 {
   height: 16px;
   width: 16px;
 }
-.btn-outline-custom:hover i, .btn-outline-custom:hover svg {
+.btn-outline-custom:hover i,
+.btn-outline-custom:hover svg {
   transform: translateX(10px);
 }
 .btn-outline-custom:hover {
@@ -12563,8 +12565,9 @@ h6, .h6 {
   gap: 32px;
 }
 .header-wrapper .main-nav .nav-list .nav-link {
+  font-size: 14px;
   color: #2A2C31;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   transition: color 0.3s;
 }
