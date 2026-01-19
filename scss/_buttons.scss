@@ -1,0 +1,191 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-left: 15px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: $btn-border-radius;
+  transition: $btn-transition;
+  max-height: 55px;
+
+  // İkonlu butonlar için (Detay, Gönder vb.)
+  i,
+  svg {
+    transition: transform 0.3s ease;
+  }
+}
+
+// --- Özel Buton Varyasyonları ---
+
+// "Detay" Butonu
+.btn-outline-custom {
+  border: 1px solid $border-color;
+  background-color: transparent;
+  color: $dark;
+
+  i {
+    height: 16px;
+    width: 16px;
+  }
+
+  &:hover {
+
+    i,
+    svg {
+      transform: translateX(10px);
+    }
+
+    background-color: $primary-hover;
+    border-color: $primary-hover;
+    color: white;
+  }
+}
+
+// Main Button
+.btn-primary {
+  background-color: $primary;
+  border: none;
+}
+
+// "Dergi Kurulu"
+.btn-kurul {
+  background-color: $primary;
+
+  i {
+    height: 22px;
+    width: 25px;
+  }
+
+  &:hover {
+    background-color: $primary-dark-hover;
+  }
+}
+
+// "Görüntüle"
+.btn-see {
+  background-color: $primary;
+
+  i {
+    height: 24px;
+    width: 24px;
+  }
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+// "Yazar Rehberi" (Yeşil)
+.btn-author {
+  background-color: $success;
+
+  i {
+    height: 24px;
+    width: 24px;
+  }
+
+  &:hover {
+    background-color: $success-hover;
+  }
+}
+
+// "Gönder" (Kırmızı)
+.btn-send {
+  background-color: $danger;
+
+  i {
+    height: 13px;
+    width: 13px;
+  }
+
+  &:hover {
+    background-color: $danger-hover;
+  }
+}
+
+// --- Yuvarlak İkon Butonları ---
+.btn-circle {
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid $border-color;
+  background-color: white;
+
+  i {
+    height: 18px;
+    width: 18px;
+  }
+
+  &:hover {
+    background-color: white;
+    border-color: $border-color;
+  }
+}
+
+// download button
+.btn-download {
+
+  &:hover {
+    background-color: $dark;
+    border-color: $dark;
+    color: white;
+  }
+}
+
+// search button
+.btn-search {
+
+  &:hover {
+    background-color: $primary-light-hover;
+    border-color: $primary-light-hover;
+    color: white;
+  }
+}
+
+// --- Pagination Butonları ---
+.btn-square {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 15px;
+  border: none;
+  background-color: $light-gray-2;
+  color: $primary;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    height: 20px;
+    width: 20px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    background-color: darken($light-gray-2, 5%);
+  }
+
+  // Previous Button
+  &.btn-nav-prev {
+    color: #9295A2;
+
+    &:hover {
+      color: $primary;
+      background-color: $light-gray;
+    }
+  }
+
+  // Next Button
+  &.btn-nav-next {
+    color: $primary;
+
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+}

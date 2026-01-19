@@ -1,0 +1,65 @@
+.card-custom {
+  background: white;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .card-title {
+    font-size: $h4-font-size; // 24px
+    font-weight: $font-weight-bold;
+    line-height: 30px;
+    color: $dark;
+    margin-bottom: 8px;
+  }
+
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: $gray;
+  }
+}
+
+.card-article {
+  padding: 20px 30px; // Yatayda daha geniş padding
+
+  .card-title {
+    font-size: 20px; // Dikey karta göre başlık biraz daha küçük olabilir
+    line-height: 1.4;
+    color: $dark;
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: $gray;
+
+    strong {
+      color: $dark;
+    }
+  }
+
+  // Mobil cihazlarda butonların alta geçmesi için
+  @media (max-width: 768px) {
+    .d-flex {
+      flex-direction: column;
+      align-items: flex-start !important;
+    }
+
+    .ms-md-4 {
+      margin-left: 0 !important;
+      margin-top: 10px;
+    }
+  }
+}

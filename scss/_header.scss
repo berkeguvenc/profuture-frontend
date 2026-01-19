@@ -1,0 +1,167 @@
+.header-wrapper {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  z-index: 1020;
+
+  // --- Mavi Üst Bar ---
+  .top-bar {
+    display: none;
+    background-color: $dark-blue;
+    height: 44px;
+    color: white;
+    font-size: 13px;
+    position: relative;
+    z-index: -1;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      padding-left: 320px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      padding-left: 380px;
+    }
+
+    .top-left .icon {
+      width: 22px;
+      height: 18px;
+    }
+
+    .top-right .info-item .value {
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  // --- Ana Header ---
+  .main-header {
+    background-color: white;
+    height: 70px;
+    position: relative;
+
+    @include media-breakpoint-down(xl) {
+      .header-actions {
+        .btn {
+          width: 55px;
+          height: 55px;
+          padding: 0;
+
+          span {
+            display: none;
+
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 76px;
+    }
+  }
+
+  // --- Logo Alanı ---
+  .logo-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: $primary;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 44px;
+
+    @include media-breakpoint-up(lg) {
+      top: -44px;
+      height: 120px;
+      padding: 0 58px 0 24px;
+      border-top-right-radius: 100px;
+
+      // --- BEYAZ KÜRE ---
+      &::before {
+        content: "";
+        position: absolute;
+        top: -9px;
+        right: -7px;
+        width: 154px;
+        height: 154px;
+        background-color: white;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      top: -44px;
+      height: 120px;
+      padding: 0 66px 0 32px;
+      border-top-right-radius: 100px;
+
+      // --- BEYAZ KÜRE ---
+      &::before {
+        content: "";
+        position: absolute;
+        top: -9px;
+        right: -7px;
+        width: 154px;
+        height: 154px;
+        background-color: white;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+
+    .logo-img {
+      max-height: 45px;
+
+      @include media-breakpoint-up(lg) {
+        max-height: 60px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-height: 80px;
+      }
+
+      width: auto;
+    }
+  }
+
+  // --- Navigasyon ---
+  .main-nav {
+    @include media-breakpoint-up(lg) {
+      padding-left: 100px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding-left: 260px;
+    }
+
+    .nav-list {
+      gap: 32px;
+
+      .nav-link {
+        font-size: 14px;
+        color: $dark;
+        font-weight: $font-weight-medium;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  // Mobil Butonu
+  .btn-mobile-toggle {
+    border: none;
+    background: transparent;
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      color: $primary;
+    }
+  }
+}

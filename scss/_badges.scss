@@ -1,0 +1,44 @@
+.badge-custom {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: $font-weight-semibold;
+  line-height: 1;
+
+
+  &.badge-info-pill {
+    background-color: $info;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+  }
+
+  &.badge-primary-pill {
+    background-color: $primary-hover;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+  }
+
+  &.badge-primary {
+    background-color: $primary;
+    color: white;
+  }
+
+  &.badge-success {
+    background-color: $success;
+    color: white;
+  }
+
+  &.badge-warning {
+    background-color: $warning;
+    color: white;
+  }
+
+  &.badge-light {
+    background-color: $light;
+    color: $primary-hover;
+  }
+}
