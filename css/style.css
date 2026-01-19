@@ -12753,5 +12753,43 @@ h6, .h6 {
     text-align: center !important;
   }
 }
+/* Custom Hero Section */
+.hero-section {
+  background-image: url("../assets/images/slide-background.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+  margin-top: -60px;
+}
+.hero-section .hero-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #DAEFFF;
+}
+@media (min-width: 992px) {
+  .hero-section .hero-title {
+    font-size: 28px;
+  }
+}
+.hero-section .hero-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 480px;
+  font-weight: 300;
+}
+.hero-section .hero-meta {
+  font-size: 14px;
+  font-weight: 500;
+}
+.hero-section .hero-img {
+  transform: scale(1) translateY(300px);
+}
+@media (max-width: 991.98px) {
+  .hero-section .hero-img {
+    transform: scale(0.8) translateY(230px);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
