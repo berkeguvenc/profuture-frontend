@@ -12030,6 +12030,41 @@ h6, .h6 {
   color: white;
 }
 
+.btn-square {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 15px;
+  border: none;
+  background-color: #F5F7FF;
+  color: #273D89;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-square i {
+  height: 20px;
+  width: 20px;
+  transition: all 0.3s ease;
+}
+.btn-square:hover {
+  background-color: rgb(219.5, 226.6, 255);
+}
+.btn-square.btn-nav-prev {
+  color: #9295A2;
+}
+.btn-square.btn-nav-prev:hover {
+  color: #273D89;
+  background-color: #E7EAF5;
+}
+.btn-square.btn-nav-next {
+  color: #273D89;
+}
+.btn-square.btn-nav-next:hover {
+  background-color: #273D89;
+  color: white;
+}
+
 .icon {
   display: inline-block;
   width: 20px;

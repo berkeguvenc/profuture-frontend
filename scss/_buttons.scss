@@ -145,3 +145,47 @@
     color: white;
   }
 }
+
+// --- Pagination Butonları ---
+.btn-square {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 15px;
+  border: none;
+  background-color: $light-gray-2;
+  color: $primary;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    height: 20px;
+    width: 20px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    background-color: darken($light-gray-2, 5%);
+  }
+
+  // Previous Button
+  &.btn-nav-prev {
+    color: #9295A2;
+
+    &:hover {
+      color: $primary;
+      background-color: $light-gray;
+    }
+  }
+
+  // Next Button
+  &.btn-nav-next {
+    color: $primary;
+
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+}
